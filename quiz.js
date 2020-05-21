@@ -87,7 +87,7 @@ function endQuiz() {
     // I didn't understand why there was a check on myAnswers[(lengthofobject - 1)].
     // Because of it, the time lapse did not work, I removed it and everything is fine
     // if (myAnswers[(lengthofobject - 1)]) {
-    var output = "<div class='output'>Резултат<br>";
+    var output = "<div class='output'><span class='title'>Резултат</span><br>";
     var questionResult = "NA";
     //console.log('Quiz Over');
     myAnswers.forEach(function (answer, i) {
@@ -100,7 +100,7 @@ function endQuiz() {
         output = output + '<p>Питање ' + (i + 1) + ' ' + questionResult + '</p> ';
     });
 
-    output = output + '<p>Имате ' + correct + ' од ' + lengthofobject + ' тачних одговора.</p> ';
+    output = output + '<p class="question-result">Имате ' + correct + ' од ' + lengthofobject + ' тачних одговора.</p> ';
 
     // FROM-NIKITA
     // Added percent calculation and evaluation check
