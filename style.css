@@ -65,11 +65,15 @@
     font-size: 20px;
 }
 
+/* FROM-NIKITA */
+/* Added padding */
 .output .title {
     padding-bottom: 18px;
     display: inline-block;
 }
 
+/* FROM-NIKITA */
+/* Added padding */
 .output .question-result {
     padding-top: 15px;
     padding-bottom: 15px;
