@@ -55,10 +55,12 @@ function addBox() {
 // FROM-NIKITA
 // Added one function to complete the test. You need it to switch the testcompleted variable.
 function finishTest() {
-    var element = document.getElementById("ten-countdown");
-    element.innerHTML = "Completed!";
-    testСompleted = true;
-    endQuiz();
+    if (myAnswers[(lengthofobject - 1)]) {
+        var element = document.getElementById("ten-countdown");
+        element.innerHTML = "Completed!";
+        testСompleted = true;
+        endQuiz();
+    }
 }
 
 function moveNext() {
